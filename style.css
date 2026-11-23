@@ -76,6 +76,7 @@ h1 {
     border-radius: 100% 0;
     transform: rotate(-25deg);
 }
+
 /* Flower swaying animation */
 .flower {
     transform-origin: bottom center;
