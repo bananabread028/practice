@@ -1,9 +1,78 @@
 body {
-    background-color: black;
+    background: #101820;
     color: white;
     text-align: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
 h1 {
-    color: lime;
+    margin-top: 50px;
+    color: pink;
+}
+
+.flower {
+    position: relative;
+    width: 200px;
+    height: 350px;
+    margin: 100px auto;
+}
+
+.petals {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translateX(-50%);
+}
+
+.petal {
+    position: absolute;
+    width: 45px;
+    height: 65px;
+    background: #ff69b4;
+    border-radius: 50%;
+    top: 0;
+    left: 27px;
+    transform-origin: 50% 50px;
+}
+
+.petal:nth-child(1) { transform: rotate(0deg); }
+.petal:nth-child(2) { transform: rotate(60deg); }
+.petal:nth-child(3) { transform: rotate(120deg); }
+.petal:nth-child(4) { transform: rotate(180deg); }
+.petal:nth-child(5) { transform: rotate(240deg); }
+.petal:nth-child(6) { transform: rotate(300deg); }
+
+.center {
+    position: absolute;
+    top: 35px;
+    left: 85px;
+    width: 30px;
+    height: 30px;
+    background: yellow;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.stem {
+    position: absolute;
+    top: 95px;
+    left: 96px;
+    width: 8px;
+    height: 190px;
+    background: #028137;
+    border-radius: 10px;
+}
+
+.leaf {
+    position: absolute;
+    top: 170px;
+    left: 100px;
+    width: 55px;
+    height: 25px;
+    background: #028137;
+    border-radius: 100% 0;
+    transform: rotate(-25deg);
 }
